@@ -1,0 +1,9 @@
+n=eval(input("enter a number:"))
+a=eval(input("enter a number:"))
+b=eval(input("enter a number:"))
+if(n>a & n>b):
+ print(n,"is greater")
+if(a>b):
+    print(a,"is greater")
+else:
+ print(b,"is greater")
