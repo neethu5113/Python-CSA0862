@@ -1,0 +1,15 @@
+# Input for Array 1
+array1 = [int(input(f"Enter element {i + 1}: "))for i in range(int(input("Enter the number of elements for Array 1: ")))]
+
+# Input for Array 2
+array2 = [int(input(f"Enter element {i + 1}: ")) for i in range(int(input("\nEnter the number of elements for Array 2: ")))]
+
+# Find and print the intersection
+intersection = sorted(set(array1) & set(array2))
+print("\nIntersection is:", intersection)
+
+# Find and print the union
+union = sorted(set(array1) | set(array2))
+print("Union is:", union)
+
+
