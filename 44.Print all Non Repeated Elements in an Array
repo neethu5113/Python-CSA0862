@@ -1,0 +1,13 @@
+def find_non_repeated_elements(arr):
+    non_repeated = [element for element in arr if arr.count(element) == 1]
+    return non_repeated
+size = int(input("Enter the size of the array: "))
+array = []
+
+print(f"Enter {size} elements of an array:")
+for _ in range(size):
+    array.append(int(input()))
+
+non_repeated_elements = find_non_repeated_elements(array)
+
+print("The array after removing duplicates is:", *non_repeated_elements)
