@@ -1,0 +1,14 @@
+# Input for array
+n = int(input("Enter the value of n: "))
+arr = [int(input("Enter element {}: ".format(i + 1))) for i in range(n)]
+
+# Input for split position
+position = int(input("Enter the position of the element to split the array: "))
+
+# Split and add the first part to the end
+resultant_array = arr[position:] + arr[:position]
+
+# Print the resultant array
+print("The resultant array is:")
+for element in resultant_array:
+    print(element)
