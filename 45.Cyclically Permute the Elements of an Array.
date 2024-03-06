@@ -1,0 +1,19 @@
+def cyclically_permute(arr):
+    n = len(arr)
+    rotated_array = [arr[(i + 1) % n] for i in range(n)]
+    return rotated_array
+
+# Example usage
+n = int(input("Enter the value of n: "))
+array = []
+
+print("Enter the numbers:")
+for _ in range(n):
+    array.append(int(input()))
+
+cyclic_permuted_array = cyclically_permute(array)
+
+print("Cyclically permuted numbers are given below:")
+for element in cyclic_permuted_array:
+    print(element)
+
