@@ -1,0 +1,17 @@
+def find_missing_number(arr, n):
+    total_sum = n * (n + 1) // 2
+    actual_sum = sum(arr)
+    missing_number = total_sum - actual_sum
+    return missing_number
+
+# Example usage
+size = int(input("Enter the size of the array: "))
+array = []
+
+print("Enter elements into array:")
+for _ in range(size):
+    array.append(int(input()))
+
+missing_number = find_missing_number(array, size + 1)
+
+print("Missing element is:", missing_number)
